@@ -1,11 +1,10 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: 'OSI TCP-IP models'
 pubDate: 2025-05-02
 description: 'OSI TCP-IP models scientific article.'
 author: 'Vcitor Jakxel Islas Carreon'
-image:
 ---
+
 # OSI/TCP-IP models
 
 ## What is a OSI/TCP-IP model?

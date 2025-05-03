@@ -2,7 +2,7 @@
 title: 'OSI TCP-IP models'
 pubDate: 2025-05-02
 description: 'OSI TCP-IP models scientific article.'
-author: 'Vcitor Jakxel Islas Carreon'
+author: 'Victor Jakxel Islas Carreon'
 ---
 
 # OSI/TCP-IP models
@@ -24,5 +24,20 @@ A frame of concept reference what divides the communications in seven layers, ea
 6. **Data enlace layer**
 7. **Fisic Layer**
 
+### Function
+Provides a estructure for understand and analize the communication in net.
+
 ## TCP-IP model
+**TCP/IP(Transmition Control Protocol / Internet Protocol)**
+A practic model and used in the internet, that organize the net communication in four layers.
+
+### Layers:
+1. **Aplication layer**
+2. **Transport layer**
+3. **Internet layer**
+4. **Data enlace layer / Fisic layer**
+
+### Function
+Defines the communication in internet and the gestion of data between devices.
+
 

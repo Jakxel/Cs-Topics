@@ -12,6 +12,8 @@ author: 'Victor Jakxel Islas Carreon'
 The model OSI and TCP-IP are concept models that describes how the data is transmitted for the net, each whit its different approach.
 The OSI models it's a frame of reference more general and theoretical with seven layers, for other part the TCP-IP models its a more practical and used in the internet implementation, with four layers.
 
+![image](src/img/01/01-6/osi-tcpip.png)
+
 ## OSI model
 **OSI(Open Systems Interconection)**
 A frame of concept reference what divides the communications in seven layers, each whit especifics functions

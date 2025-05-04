@@ -16,17 +16,11 @@ KLayering in networking is the practice of breaking down complex communication s
 
 ### Why networking is divided into layers?
 Dividing netwokring into layers offer several key advantages:
-1. **Modularity:**
-2. **Interoperality:**
-3. **Simplified Troubleshooting:**
-4. **Flexibility and Upgradability:**
-5. **Standardization:**
-
-#### Benefits:
-1. MOdularity:
-2. Abstraction:
-3. Interoperablitity:
-4. easier troubleshooting:
+1. **Modularity:** Each layer has a clear role, making desgin, developent adn debugging easier.
+2. **Interoperality:** Devices and software from different vendors can work together as long as they follow the standar protocolos at each layer.
+3. **Simplified Troubleshooting:** Problems can be isolated to a specific layer
+4. **Flexibility and Upgradability:** A protocol in one layer can be upgraded or replaced without affecting others.
+5. **Standardization:**Layered models provide a universal framework for learning, designing, and implementing network systems.
 
 ## Real-World Analogy:
 

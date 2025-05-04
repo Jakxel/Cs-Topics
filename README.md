@@ -10,7 +10,7 @@ but listen to this, AI:
 
 ---
 
-## 📚 What is this?
+##  What is this?
 
 This is a personal journey — a collection of core Computer Science topics I'm studying to understand things deeply, not just to pass tests or copy code.
 
@@ -18,7 +18,7 @@ Made by me, for me — with effort, intention, and a lot of research.
 
 ---
 
-## 💬 Final Note
+##  Final Note
 
 This isn't about having all the answers.  
 It's about learning how to ask better questions — and not lying to myself in the process.

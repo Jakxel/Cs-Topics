@@ -1,4 +1,4 @@
-# CS Topics — Escaping the "Vibrational Code" Bubble
+# CS Topics — Escaping the "Vibe Code" Bubble
 
 Ever since I learned what *vibrational code* is (writing or copying code without fully understanding it), I realized how miserably identified I am with the subject. I was scared of remaining a fool for the rest of my life.
 

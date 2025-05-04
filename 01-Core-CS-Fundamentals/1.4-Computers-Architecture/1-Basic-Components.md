@@ -1,35 +1,84 @@
 ---
-title: 'Basics Components'
+title: 'Basic Components'
 pubDate: 2025-05-02
-description: 'Basics components in the computers architecture.'
+description: 'Basic components in computer architecture.'
 author: 'Victor Jakxel Islas Carreon'
 ---
 
-# Basics Components Of Computer Hardware
-Computer hardware oncludes the physcal part of a computer. it refers to the computer systems, especially those that forms part of the centar processing unit.
-**What is computer hardware?**:
-Computer hardware includes the physical components of a computer. Personal computer(PCs) are electronics devices that uses microships to process information and may include desktop computer, laptop or tablets. Since a computer comprises many hardware components, they work togheter and depend on each other to function properly.
+# Basic Components of Computer Hardware
 
-# What are basic components of computer hardware?
-There are severa basic components of computer hardware including:
-## CPU
-**Central Processing Unit (CPU)**: the CPU control the computer processes and communicates with the other components of a personal computer. A computer's CPU may be one of the most complicated part of the computer because of its inticacies.
-The central Processing Unit is teh core of any computer devices. it comprises three major components of the coomputer:
-- Memory Unit
-- Control Unit
-- Arithmetic and logical UNIt 
-ALL these three unit are elemnts of CPU and together help in the efficinet working and processing of data
+Computer hardware includes the **physical parts of a computer**. It refers to the computer systems—especially those that form part of the central processing unit.  
 
-## Memory
-Computer memory is just like the human brain. It is used to store data/information and instructions. It is a data storage unit or a data storage device where data is to be processed and instructions required for processing are stored. It can store both the input and output can be stored here.
-### Diference between RAM and ROM
-**Random Access Memory (RAM)**: RAM is where data liives temporarily while it's being actively used by pograms.
-**Read Only Memory (ROM)**: ROM is a type of non-volatile memory used in computers and other electronic devices
+**What is computer hardware?**  
+Computer hardware includes the physical components of a computer. Personal computers (PCs) are electronic devices that use microchips to process information and may include desktop computers, laptops, or tablets. Since a computer comprises many hardware components, they work together and depend on each other to function properly.
 
-## Buses and I/O systems
-**Buses**:
-**Inout Devices**:
-**Output Devices**:
+---
+
+## What Are the Basic Components of Computer Hardware?
+
+There are several basic components of computer hardware, including:
+
+---
+
+##  CPU (Central Processing Unit)
+
+The **CPU** controls the computer processes and communicates with the other components of a personal computer. It is one of the most complex parts of the computer due to its intricate architecture.
+
+The CPU consists of three main sub-units:
+
+- **Memory Unit (MU)**
+- **Control Unit (CU)**
+- **Arithmetic and Logic Unit (ALU)**
+
+These units work together to ensure the efficient execution and processing of instructions.
+
+---
+
+##  Memory
+
+Computer memory functions like the human brain—it is used to **store data, information, and instructions** temporarily or permanently. It is essential for both input and output operations.
+
+### Difference Between RAM and ROM
+
+- **Random Access Memory (RAM)**: Temporary, volatile memory used for storing data that is actively being used or processed by the system. The contents are lost when power is off.
+- **Read-Only Memory (ROM)**: Permanent, non-volatile memory used to store firmware and essential startup instructions. The data is retained even when the computer is turned off.
+
+---
+
+##  Buses and I/O Systems
+
+### Buses
+
+A **bus** is a communication system that transfers data between components of a computer. It acts like a highway connecting different parts. Main types include:
+
+- **Data Bus**: Carries the actual data.
+- **Address Bus**: Carries the memory addresses of data.
+- **Control Bus**: Carries control signals from the CPU.
+
+### Input Devices
+
+**Input devices** are used to enter data into the computer. Examples include:
+
+- Keyboard
+- Mouse
+- Scanner
+- Microphone
+- Touchscreen
+
+### Output Devices
+
+**Output devices** allow the computer to communicate results to the user. Examples include:
+
+- Monitor
+- Printer
+- Speakers
+- Projector
+
+---
+
+##  Conclusion
+
+Understanding the basic components of computer hardware is essential to grasp how a computer operates. The CPU, memory, buses, and I/O systems all play vital roles and work together to execute instructions, store data, and interact with users and other systems.
 
 
 

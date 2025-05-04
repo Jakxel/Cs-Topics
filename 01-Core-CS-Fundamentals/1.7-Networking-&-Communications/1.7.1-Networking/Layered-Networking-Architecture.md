@@ -1,5 +1,5 @@
 ---
-title: 'OSI TCP-IP models'
+title: 'Layered-Networking-Architecture'
 pubDate: 2025-05-02
 description: 'OSI TCP-IP models scientific article.'
 author: 'Victor Jakxel Islas Carreon'

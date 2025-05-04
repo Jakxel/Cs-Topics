@@ -31,12 +31,12 @@ Dividing netwokring into layers offer several key advantages:
 ## Real-World Analogy:
 
 Think of sending a package:
-	1.	You write the letter (Application Layer).
-	2.	Put it in an envelope (Presentation Layer).
-	3.	Add sender/receiver info (Session Layer).
-	4.	Hand it to a delivery service (Transport Layer).
-	5.	The package is routed (Network Layer).
-	6.	Carried via trucks or planes (Data Link/Physical Layers).
+>	1.	You write the letter (Application Layer).
+>	2.	Put it in an envelope (Presentation Layer).
+>	3.	Add sender/receiver info (Session Layer).
+>	4.	Hand it to a delivery service (Transport Layer).
+>	5.	The package is routed (Network Layer).
+>	6.	Carried via trucks or planes (Data Link/Physical Layers).
 
 Each step is independent but contributes to the final delivery.
 

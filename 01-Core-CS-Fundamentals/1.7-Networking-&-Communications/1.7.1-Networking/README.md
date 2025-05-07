@@ -7,7 +7,7 @@
 - Client-server vs peer-to-peer models
 
 2. Network Architectures and Models
+- Layered Models
 - OSI Model (7 layers)
 - TCP/IP Model (4 layers)
 - Encapsulation/Decapsulation
-- Role of protocols at each layer

@@ -11,3 +11,9 @@
 - TCP/IP Model (4 layers)
 - Encapsulation/Decapsulation
 - Role of protocols at each layer
+
+3. Network Hardware and Transmission
+- Network Interface Cards (NICs)
+- Hubs, switches, routers, access points
+- Transmission media (wired/wireless)
+- Signal encoding and modulation

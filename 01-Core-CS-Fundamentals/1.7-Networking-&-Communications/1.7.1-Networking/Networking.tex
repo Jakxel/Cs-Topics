@@ -1,0 +1,214 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,english]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{lmodern}
+
+\geometry{margin=2.5cm}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{Computer Networks Notes}}\\[0.5em]
+    {\large Victor Jakxel Islas Carreon}
+\end{center}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section*{1. Network Overview \\ \normalsize{\textit{pubDate: 2025-05-01}}}
+
+\subsection*{What is a Network?}
+A \textbf{network} is a group of interconnected devices that can communicate and share resources. Think of it as a system where computers and other devices exchange information, collaborate, and access shared resources like printers or storage.
+
+Computers use common \textbf{communication protocols} over \textbf{digital interconnections} to communicate with each other. These interconnections are built using \textbf{telecommunications network technologies}, which may be based on physical wiring, optical fiber, or wireless radio-frequency methods. These can be arranged in a variety of \textbf{network topologies}.
+
+\subsection*{Network Packet}
+Most modern computer networks use protocols based on \textbf{packet-mode transmission}. A \textbf{network packet} is a formatted unit of data carried by a packet-switched network.
+
+A packet consists of two types of data:
+\begin{itemize}
+    \item \textbf{Control information}
+    \item \textbf{User data} (also called the \textbf{payload})
+\end{itemize}
+
+The control information provides the network with the necessary data to deliver the user payload correctly. This includes things like:
+\begin{itemize}
+    \item Source and destination network addresses
+    \item Error detection codes
+    \item Sequencing information
+\end{itemize}
+
+Typically, the control information is found in the \textbf{packet header}, while the payload is carried in the body of the packet.
+
+\subsection*{Types of Networks}
+Key examples include:
+\begin{itemize}
+    \item \textbf{Local Area Networks (LANs)}
+    \item \textbf{Wide Area Networks (WANs)}
+    \item \textbf{Personal Area Networks (PANs)}
+    \item \textbf{Metropolitan Area Networks (MANs)}
+    \item \textbf{Campus Area Networks (CANs)}
+    \item \textbf{Virtual Private Networks (VPNs)}
+\end{itemize}
+
+\subsection*{LAN}
+A LAN connects computers and devices within a \textbf{limited area}, such as a home, office, or building.
+
+\subsection*{MAN}
+A MAN covers a \textbf{larger area than a LAN}, such as a city or a large campus.
+
+\subsection*{WAN}
+A WAN spans a \textbf{very large geographical area}, such as multiple cities or continents.
+
+\subsection*{PAN}
+A PAN is the \textbf{smallest and simplest type of network}, used to connect personal devices over a short range.
+
+\subsection*{Network Topology}
+\textbf{Network topology} refers to the arrangement of different elements such as nodes, links, or devices in a computer network.
+
+\subsection*{What is Network Topology?}
+There are two major categories:
+\begin{itemize}
+    \item \textbf{Physical Topology}
+    \item \textbf{Logical Topology}
+\end{itemize}
+
+\subsection*{Types of Topologies}
+\begin{itemize}
+    \item \textbf{Point-to-Point}
+    \item \textbf{Mesh Topology}
+    \item \textbf{Bus Topology}
+    \item \textbf{Star Topology}
+    \item \textbf{Ring Topology}
+    \item \textbf{Tree Topology}
+    \item \textbf{Hybrid Topology}
+\end{itemize}
+
+\subsection*{Client-Server vs Peer-to-Peer Models}
+\textbf{Client-server model:} A computing model where a server hosts, manages, and delivers resources and services to one or more clients.
+
+\textbf{Peer-to-peer model:} A decentralized network where participants (peers) interact directly with each other, sharing resources.
+
+\begin{center}
+\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Feature} & \textbf{Client-Server Model} & \textbf{Peer-to-Peer Model} \\
+\hline
+Architecture & Centralized & Decentralized \\
+\hline
+Resource Management & Managed by the server & Shared by all peers \\
+\hline
+Scalability & Highly scalable & Limited by peers \\
+\hline
+Examples & Web services, email systems, databases & BitTorrent, blockchain \\
+\hline
+Dependency & Relies on central server & No central dependency \\
+\hline
+Maintenance & Easier to manage & Harder to manage \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+% =====================
+\section*{2. Layered Networking Architecture \\ \normalsize{\textit{pubDate: 2025-05-02}}}
+
+\subsection*{1. Concept of layering}
+KLayering in networking is the practice of breaking down complex communication systems into a series of \textbf{smaller, manageable, and well-defined layers}.
+
+\textbf{Key Characteristics:}
+\begin{itemize}
+    \item each layer is responsible for a \textbf{speific Aspect}
+    \item layers \textbf{only communicate} with the layer above or below (encapsulation)
+    \item Changes in one layer can be made \textbf{independently} (modularity)
+\end{itemize}
+
+\subsection*{Why networking is divided into layers?}
+\begin{enumerate}
+    \item \textbf{Modularity}
+    \item \textbf{Interoperality}
+    \item \textbf{Simplified Troubleshooting}
+    \item \textbf{Flexibility and Upgradability}
+    \item \textbf{Standardization}
+\end{enumerate}
+
+\subsection*{Real-World Analogy}
+Think of sending a package:
+\begin{itemize}
+    \item You write the letter (Application Layer)
+    \item Put it in an envelope (Presentation Layer)
+    \item Add sender/receiver info (Session Layer)
+    \item Hand it to a delivery service (Transport Layer)
+    \item The package is routed (Network Layer)
+    \item Carried via trucks or planes (Data Link/Physical Layers)
+\end{itemize}
+
+\subsection*{What is an OSI/TCP-IP model?}
+OSI is a more general theoretical model with seven layers. TCP/IP is practical, used on the internet, with four layers.
+
+\subsection*{OSI model}
+\begin{itemize}
+    \item 7. Application layer
+    \item 6. Presentation layer
+    \item 5. Session layer
+    \item 4. Transport layer
+    \item 3. Network layer
+    \item 2. Data link layer
+    \item 1. Physical layer
+\end{itemize}
+
+\subsection*{TCP-IP model}
+\begin{itemize}
+    \item 4. Application layer
+    \item 3. Transport layer
+    \item 2. Internet layer
+    \item 1. Data link / Physical layer
+\end{itemize}
+
+\newpage
+% =====================
+\section*{3. Network Hardware and Transmission \\ \normalsize{\textit{pubDate: 2025-05-16}}}
+
+\subsection*{Network Interface Cards (NICs)}
+A Network Interface Card (NIC) is a hardware component that connects a computer to a network, either through cables (wired) or wirelessly (Wi-Fi).  
+Inside the NIC, there is a specialized integrated circuit called the network interface controller.
+
+\subsection*{Hubs, switches, routers, access points}
+\textbf{What is a hub?}  
+Broadcasts data to all connected devices.
+
+\textbf{What is a switch?}  
+Sends data only to the intended recipient.
+
+\textbf{What is a router?}  
+Connects different networks and often provides Wi-Fi access.
+
+\subsection*{The Access Point}
+The access point is a device that interconnects wireless communication devices, forming a wireless network. It allows client machines to connect without cables and without bandwidth limitation.
+
+\subsection*{Transmission Media (wired/wireless)}
+A transmission media is the physical medium through which data is transmitted.
+
+\textbf{Guided media:}
+\begin{itemize}
+    \item Twisted pair cable
+    \item Coaxial cable
+    \item Optical fiber cable
+    \item Stripline
+\end{itemize}
+
+\textbf{Unguided media:}
+\begin{itemize}
+    \item Radio waves
+    \item Microwaves
+    \item Infrared
+\end{itemize}
+
+\subsection*{Signal encoding and modulation}
+Encoding transforms data into a suitable format for transmission, while modulation adapts a carrier signal to carry the encoded data.
+
+\end{document}

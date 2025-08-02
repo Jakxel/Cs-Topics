@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{listings}
+
+\geometry{a4paper, margin=2.5cm}
+
+% Encabezado
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Mathematics for CS}
+\lhead{Jakxel}
+\cfoot{\thepage}
+
+% Estilos para definiciones y demás
+\newtheorem{definition}{Definición}[section]
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{example}{Ejemplo}[section]
+
+\newtcolorbox{keyformula}{
+  colback=blue!5!white,
+  colframe=blue!80!black,
+  title=Fórmula clave,
+  fonttitle=\bfseries,
+  sharp corners,
+  before skip=10pt, after skip=10pt
+}
+
+% Configuración de listings para código
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  stringstyle=\color{teal},
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  breaklines=true,
+  frame=single,
+  tabsize=2,
+  showstringspaces=false
+}
+
+\title{Mathematics for Computer Science}
+\author{Jakxel}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% ============================
+\section{Lógica Proposicional}
+\subsection{Conectivos Lógicos}
+\begin{definition}
+Un \textbf{conectivo lógico} es un operador que une dos o más proposiciones para formar una proposición compuesta. Ejemplos comunes: $\neg$, $\land$, $\lor$, $\rightarrow$, $\leftrightarrow$.
+\end{definition}
+
+\begin{keyformula}
+$p \rightarrow q \equiv \neg p \lor q$
+\end{keyformula}
+
+\subsection{Tablas de verdad}
+\begin{example}
+Verifica la validez de la siguiente proposición: $((p \rightarrow q) \land (q \rightarrow r)) \rightarrow (p \rightarrow r)$
+\end{example}
+
+% ============================
+\section{Teoría de Conjuntos}
+\subsection{Operaciones}
+\begin{definition}
+La \textbf{intersección} de dos conjuntos $A$ y $B$ es el conjunto de todos los elementos que pertenecen a ambos: $A \cap B$.
+\end{definition}
+
+\begin{keyformula}
+\[
+\neg (A \cup B) = \neg A \cap \neg B \quad \text{y} \quad \neg (A \cap B) = \neg A \cup \neg B
+\]
+\end{keyformula}
+
+% ============================
+\section{Teoría de Números}
+\subsection{Congruencias}
+\begin{definition}
+$a \equiv b \pmod{n}$ significa que $n$ divide a $a - b$.
+\end{definition}
+
+\begin{theorem}[Pequeño Teorema de Fermat]
+Si $p$ es un número primo y $a$ no es divisible por $p$, entonces:
+\[
+a^{p-1} \equiv 1 \pmod{p}
+\]
+\end{theorem}
+
+% ============================
+\section{Combinatoria}
+\subsection{Permutaciones y Combinaciones}
+\begin{keyformula}
+Permutaciones sin repetición: $P(n, r) = \frac{n!}{(n - r)!}$
+\end{keyformula}
+
+\begin{keyformula}
+Combinaciones: $C(n, r) = \binom{n}{r} = \frac{n!}{r!(n - r)!}$
+\end{keyformula}
+
+% ============================
+\section{Probabilidad Discreta}
+\subsection{Eventos}
+\begin{definition}
+Un \textbf{evento} es un subconjunto del espacio muestral. Por ejemplo, al lanzar un dado, obtener un número par es un evento: $\{2, 4, 6\}$.
+\end{definition}
+
+\begin{example}
+¿Cuál es la probabilidad de obtener al menos una cara al lanzar dos monedas?
+\end{example}
+
+% ============================
+\section{Grafos}
+\subsection{Definición}
+\begin{definition}
+Un \textbf{grafo} $G = (V, E)$ consiste en un conjunto de vértices $V$ y un conjunto de aristas $E \subseteq V \times V$.
+\end{definition}
+
+\subsection{Árboles}
+\begin{theorem}
+Todo árbol con $n$ vértices tiene exactamente $n - 1$ aristas.
+\end{theorem}
+
+% ============================
+\section{Código en C++}
+\subsection{Ejemplo: Factorial Recursivo}
+
+\begin{definition}
+En muchas estructuras algorítmicas, es común definir funciones recursivas para resolver problemas. Aquí mostramos un ejemplo del cálculo del factorial usando C++.
+\end{definition}
+
+\begin{lstlisting}
+// C++: Factorial recursivo
+#include <iostream>
+using namespace std;
+
+int factorial(int n) {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+int main() {
+  int n = 5;
+  cout << "Factorial de " << n << " es: " << factorial(n) << endl;
+  return 0;
+}
+\end{lstlisting}
+
+\begin{example}
+El código anterior imprimirá: \texttt{Factorial de 5 es: 120}
+\end{example}
+
+\subsection{Código desde archivo externo}
+\lstinputlisting[language=C++]{factorial.cpp}
+
+\end{document}

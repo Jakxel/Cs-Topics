@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{listings}
+
+\geometry{a4paper, margin=2.5cm}
+
+% Encabezado
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Theory of computation}
+\lhead{Islas Carreon Victor Jakxel}
+\cfoot{\thepage}
+
+% Estilos para definiciones y demás
+\newtheorem{definition}{Definición}[section]
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{example}{Ejemplo}[section]
+
+\newtcolorbox{keyformula}{
+  colback=blue!5!white,
+  colframe=blue!80!black,
+  title=Fórmula clave,
+  fonttitle=\bfseries,
+  sharp corners,
+  before skip=10pt, after skip=10pt
+}
+
+% Configuración de listings para código
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  stringstyle=\color{teal},
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  breaklines=true,
+  frame=single,
+  tabsize=2,
+  showstringspaces=false
+}
+
+\title{Theory of computation}
+\author{Islas Carreon Victor Jakxel}
+\date{\today}
+\newpage
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+% Section 1 ---------------------------
+\section{Automata Theory}
+\begin{definition}[Automata Theory]
+  The automata theory is the study of abstracts machines and automata. as well as the compuational problems that can be solved using them.
+\end{definition}
+\begin{definition}[Automaton]
+An Automaton is an abstract self propelled computing device wich follows a predetermined sequence of operations automatically. 
+\end{definition}
+An automaton with a infinite number of states is called a \textbf{finite automaton} $(FA)$ or \textbf {finite-state machine} $(FSM)$ 
+Automata Theory is closely realated to formal language theory. in this context, automata are used as finite representation of formal lenguages that may be infinite. Automata are often classified by the class of formal languages they can recognize,Automata play a major role in the theory of computation, compiler, construction, artificial intelligence, parsing and formal verification. 
+\end{document}

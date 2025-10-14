@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage{listings}
+
+\geometry{a4paper, margin=2.5cm}
+
+% Encabezado
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Theory of computation}
+\lhead{Islas Carreon Victor Jakxel}
+\cfoot{\thepage}
+
+% Estilos para definiciones y demás
+\newtheorem{definition}{Definición}[section]
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{example}{Ejemplo}[section]
+
+\newtcolorbox{keyformula}{
+  colback=blue!5!white,
+  colframe=blue!80!black,
+  title=Fórmula clave,
+  fonttitle=\bfseries,
+  sharp corners,
+  before skip=10pt, after skip=10pt
+}
+
+% Configuración de listings para código
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  stringstyle=\color{teal},
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  breaklines=true,
+  frame=single,
+  tabsize=2,
+  showstringspaces=false
+}
+
+\title{Networking and Communications}
+\author{Islas Carreon Victor Jakxel}
+\date{\today}
+\newpage
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Networking fundamentals}
+\section{OSI and TCP/IP models}
+\section{Adressing and Routing}
+\section{Switching and local nertworks}
+\section{WAN networks and Communications services}
+\section{Networking security}
+\section{Modern Networking and virtualizatio}
+\section{Digital communication and Theory}
+\end{document}
